@@ -20,6 +20,9 @@ header nav{
     position: fixed;
     top: 0;
 }
+.menu-icon{
+    display: none;
+}
 .name{
     font-size:20px;
 }
