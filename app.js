@@ -35,3 +35,8 @@ form.addEventListener("submit",function(event){
     }
     form.reset();
 });
+let navLinks = document.querySelector(".links")
+let menuIcon = document.querySelector("#menu-icon");
+menuIcon.addEventListener("click",()=>{
+      navLinks.classList.toggle("active");
+})

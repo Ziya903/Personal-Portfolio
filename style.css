@@ -20,8 +20,8 @@ header nav{
     position: fixed;
     top: 0;
 }
-.menu-icon{
-    display: none;
+#menu-icon{
+    display: none ;
 }
 .name{
     font-size:20px;
@@ -303,19 +303,30 @@ textarea{
 }
 @media(max-width : 600px){
    header nav {
-      flex-direction: column;
+      flex-direction: row;
       height: auto;
       gap: 15px;
       padding: 20px;
    }
+   #menu-icon{
+    display: block;
+    font-size:25px;
+    color:white;
+   }
    .links{
-        display: flex;
+        display: none;
         flex-wrap: wrap;
         justify-content: center;
         gap: 10px;
    }
+   .links.active{
+    display: flex;
+   }
    .links a{
     margin-right: 0;
+   }
+   .btn{
+    display: none;
    }
    .hero-section{
     flex-direction: column-reverse;
